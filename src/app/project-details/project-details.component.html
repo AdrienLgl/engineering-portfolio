@@ -1,0 +1,45 @@
+<div class="background-image"
+    [ngStyle]="{ 'background-image': 'linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(7, 26, 62, 1)),url(' + backgroundImageUrl + ')' }">
+</div>
+<div class="main-container" *ngIf="project">
+    <h1 class="title">My <span class="primary-color">Projects</span> / {{project.title}}</h1>
+
+    <p class="description">{{project.long_description}}</p>
+
+
+    <div class="skills-container">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-card-container">
+            <div class="skill-card" *ngFor="let skill of project.skills">
+                <div class="circle">
+                    <mat-icon [svgIcon]="skill.icon"></mat-icon>
+                </div>
+                <p class="skill-label">{{skill.name}}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-description-container">
+        <div class="project-description">
+            <p class="description">
+                {{project.explanation}}
+            </p>
+        </div>
+
+        <div class="project-image-container">
+            <img class="project-image" *ngFor="let image of project.images" [src]="'assets/images/' + image"
+                [alt]="image">
+        </div>
+
+        <div class="link" *ngIf="project.link !== null">
+            <mat-icon *ngIf="project.link_icon !== 'github'">
+                insert_link
+            </mat-icon>
+
+            <mat-icon *ngIf="project.link_icon === 'github'" svgIcon="github"></mat-icon>
+            <a [href]="project.link" target="_blank">See more</a>
+        </div>
+
+    </div>
+</div>

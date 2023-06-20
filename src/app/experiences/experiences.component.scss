@@ -1,0 +1,200 @@
+.container {
+    padding: 0 5em 5em 5em;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    margin: auto;
+}
+
+.description {
+    text-align: center;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 17em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #37E6B1;
+    margin: 2em 1em 2em 1em;
+    background-color: rgba(27, 52, 96, 0.82);
+
+
+    .icon {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        border: 4px solid #37E6B1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        mat-icon {
+            width: 80%;
+            height: 80%;
+            padding: 10px;
+        }
+    }
+
+
+    .title {
+        margin-top: 1em;
+        font-size: 15px;
+        text-align: center;
+        font-family: "kanit-bold";
+        font-weight: bold;
+    }
+
+    .description {
+        margin-top: 1em;
+        width: 100%;
+        text-align: left;
+        font-family: "kanit-light";
+    }
+}
+
+.cells {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.experiences-title {
+    margin-top: 5em;
+}
+
+.experiences-content {
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+
+    .image {
+        width: 40em;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -10vw;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(7, 26, 62, 1)), url("../../assets/images/astronaut.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .point {
+        position: absolute;
+        top: 25%;
+        left: -0.7em;
+        border-radius: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #37E6B1;
+
+        .center {
+            padding: 4px;
+            border-radius: 100%;
+            background-color: #071A3E;
+        }
+    }
+
+    .timeline {
+        display: flex;
+        flex-flow: column wrap;
+
+        .time {
+            color: rgb(255, 255, 255, 0.5);
+            padding: 10px;
+            flex: 1 0 auto;
+            padding-right: 2em;
+            text-align: right;
+
+            h3 {
+                margin: 2em 0 0 0;
+            }
+        }
+    }
+
+    .experience-container {
+        border-left: 2px solid #37E6B1;
+
+        .company {
+            background-color: rgba(27, 52, 96, 0.82);
+            border-radius: 5px;
+            padding: 3em;
+            position: relative;
+            margin-bottom: 2em;
+
+            h2 {
+                margin: 0;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .description {
+                color: rgb(255, 255, 255, 0.5);
+                text-align: left;
+            }
+
+            .tags-container {
+                margin-top: 1em;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .tag {
+                    width: fit-content;
+                    font-size: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    padding: 0 5px 0 5px;
+                    border-radius: 4px;
+                    color: #071A3E;
+                }
+            }
+
+            mat-icon {
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                width: 60px;
+                height: 60px;
+            }
+
+        }
+
+        .company:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .timeline {
+        display: none !important;
+    }
+
+}

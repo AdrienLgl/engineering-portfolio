@@ -1,0 +1,106 @@
+.projects {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(7, 26, 62, 1)),
+    url("../../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cells {
+    width: 60vw;
+    z-index: 0;
+    height: 60vw;
+    position: absolute;
+}
+
+.cells.left {
+    top: 10vh;
+    left: -20%;
+}
+
+.main-container {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    padding-top: 15vh;
+    margin: auto;
+    color: white;
+
+    .title {
+        margin-top: 1em;
+        font-size: 50px;
+    }
+
+    .description {
+        margin: 2em 0 3em 0;
+    }
+
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 5em 0;
+
+        .card {
+            flex: 1 auto;
+            width: 27em;
+            border-radius: 8px;
+            background-color: #1A2E53;
+            margin: 0 2em 2em 0;
+
+            .card-content {
+                padding: 1.5em;
+            }
+
+            .card-image {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+                height: 15em;
+            }
+
+
+            .card-title {
+                font-size: 15px;
+                color: white;
+            }
+
+            .card-description {
+                color: rgba(255, 255, 255, 0.60);
+                max-width: 1800px;
+                max-height: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .link {
+                display: flex;
+                align-items: center;
+                color: white;
+                cursor: pointer;
+
+                mat-icon {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            .link:hover {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 50vw !important;
+    }
+
+}

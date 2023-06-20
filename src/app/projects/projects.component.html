@@ -1,0 +1,29 @@
+<div class="projects">
+    <div class="main-container">
+        <h1 class="title">My <span class="primary-color">Projects</span></h1>
+        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum vitae, consequatur
+            aliquam
+            a quasi. Minus ipsum, soluta labore harum maiores accusantium omnis sunt provident mollitia. Deleniti
+            asperiores
+            ex magni!</p>
+
+        <div class="card-container">
+            <div class="card" *ngFor="let project of projects">
+                <img class="card-image" [src]="'assets/images/' + project.images[0]" alt="project image">
+                <div class="card-content">
+                    <p class="card-title">
+                        {{project.title}}
+                    </p>
+                    <p class="card-description">
+                        {{project.short_description}}
+                    </p>
+                    <div class="link" [routerLink]="project.id">
+                        <span>Learn more</span>
+                        <mat-icon>arrow_forward_ios</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <mat-icon class="cells left" svgIcon="cell"></mat-icon>
+</div>

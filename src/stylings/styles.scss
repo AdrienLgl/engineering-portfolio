@@ -1,0 +1,44 @@
+// color
+$base-color: #37E6B1;
+$background-color: #071A3E;
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "kanit" !important;
+}
+
+p {
+    font-family: "kanit-light" !important;
+}
+
+.primary-background-color {
+    background-color: $base-color;
+}
+
+.primary-color {
+    color: $base-color;
+}
+
+body {
+    background-color: $background-color;
+}
+
+.material-icons{
+    font-family: 'Material Icons' !important;
+}
+
+.main-container {
+    position: relative;
+    min-height: 80vh;
+    z-index: 1;
+    width: 80%;
+    padding-top: 15vh;
+    margin: auto;
+    color: white;
+}

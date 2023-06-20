@@ -1,0 +1,42 @@
+<div class="navbar">
+    <div class="container active">
+        <mat-icon class="logo" svgIcon="logo" aria-hidden="false" aria-label="Logo"></mat-icon>
+        <ul class="links computer">
+            <li [routerLink]="'home'">Home</li>
+            <li (click)="goToExperiences()">Experiences</li>
+            <li [routerLink]="'projects'">Projects</li>
+            <li [routerLink]="'contact'">Contact</li>
+        </ul>
+
+        <ul class="links mobile">
+            <li [routerLink]="'home'">
+                <mat-icon>home</mat-icon>
+            </li>
+            <li (click)="goToExperiences()">
+                <mat-icon>build</mat-icon>
+            </li>
+            <li [routerLink]="'projects'">
+                <mat-icon>computer</mat-icon>
+            </li>
+            <li [routerLink]="'contact'">
+                <mat-icon>call</mat-icon>
+            </li>
+        </ul>
+        <div class="langage-selector">
+            <button mat-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon svgIcon="english-flag"></mat-icon>
+                <mat-icon>expand_more</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                    <mat-icon svgIcon="english-flag"></mat-icon>
+                    <span>English</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon svgIcon="france-flag"></mat-icon>
+                    <span>French</span>
+                </button>
+            </mat-menu>
+        </div>
+    </div>
+</div>

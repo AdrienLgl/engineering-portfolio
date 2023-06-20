@@ -1,0 +1,155 @@
+.main-container {
+    padding: 0;
+    width: 80%;
+
+    .title {
+        font-size: 50px;
+    }
+
+    .description {
+        margin-bottom: 2em;
+    }
+
+    .contact-container {
+        width: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #37E6B1;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .image {
+            width: 20em;
+            height: 10em;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(7, 26, 62, 1)),
+            url("../../assets/images/background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .fill {
+            height: 30px;
+            width: 2px;
+            background-color: #37E6B1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-right: 1em;
+
+            .circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #37E6B1;
+                border-radius: 50%;
+                padding: 10px;
+
+                mat-icon {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 20px;
+                }
+            }
+
+            .item-content {
+                margin-left: 10px;
+
+                p {
+                    margin: 0;
+                    text-align: left;
+                }
+
+                .label {
+                    color: rgba(255, 255, 255, 0.8);
+                }
+    
+                .info {
+                    font-weight: bold;
+                }
+            }
+
+            .right {
+                margin-right: 10px;
+
+                p {
+                    text-align: right;
+                }
+            }
+        }
+
+        .contact-item:last-of-type {
+            margin-top: 1em;
+        }
+    }
+
+    .form-container {
+        margin-top: 5em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 5em;
+        width: 100%;
+
+        .map {
+            width: 45%;
+            min-width: 10em;
+            height: 80vh;
+            background-image: url("../../assets/images/map.png");
+            filter: blur(0.2px) brightness(0.9) grayscale(0.9) opacity(0.34);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0 5px 0 0;
+        }
+
+        .form-content {
+            width: 50%;
+            padding-right: 2em;
+        }
+
+        .form-line {
+            display: flex;
+            width: 100%;
+            align-items: center;
+
+            mat-form-field {
+                flex: 1;
+                margin: 0 1em 0 0;
+            }
+        }
+
+        .send-btn {
+            cursor: not-allowed;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            background-color: #37E6B1;
+            border-radius: 8px;
+            margin: 0 1em 0 0;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    .form-content {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .map {
+        margin-top: 1em;
+        width: 100% !important;
+    }
+}
