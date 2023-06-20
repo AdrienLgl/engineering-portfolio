@@ -1,0 +1,100 @@
+{
+    "projects": [
+        {
+            "id": "spaceship-titanic",
+            "title": "Spaceship Titanic",
+            "short_description": "Welcome to the year 2912, where your data science skills are needed to solve a cosmic mystery. We've received a transmission from four lightyears away and things aren't looking good.",
+            "long_description": "The Spaceship Titanic was an interstellar passenger liner launched a month ago. With almost 13,000 passengers on board, the vessel set out on its maiden voyage transporting emigrants from our solar system to three newly habitable exoplanets orbiting nearby stars. While rounding Alpha Centauri en route to its first destination—the torrid 55 Cancri E—the unwary Spaceship Titanic collided with a spacetime anomaly hidden within a dust cloud. Sadly, it met a similar fate as its namesake from 1000 years before. Though the ship stayed intact, almost half of the passengers were transported to an alternate dimension!",
+            "explanation": "To help rescue crews and retrive lost passengers, I haved to predict which passengers were transported by the anomaly using records recovered from the spaceship’s damaged computer system. In this case, I'm using machine learning models (LGBM, Random Forest...) to predict wich passengers are lost.",
+            "link": "https://github.com/AdrienLgl/spaceship-titanic",
+            "link_icon": "github",
+            "skills": [
+                {
+                    "icon": "brain",
+                    "name": "Machine Learning"
+                },
+                {
+                    "icon": "model",
+                    "name": "Models"
+                },
+                {
+                    "icon": "tensorflow",
+                    "name": "TensorFlow"
+                }
+            ],
+            "images": [
+                "space_01.png",
+                "space_02.png",
+                "space_03.png"
+            ]
+        },
+        {
+            "id": "glimps-malware",
+            "title": "Glimps Malware",
+            "short_description": "Don't let any malware through ! Our Extended Malware Analysis Platform (XMAP) enable you to detect and characterize the most advanced threats.",
+            "long_description": "GLIMPS offers a unique Deep Learning technology designed to read and understand the elements that compose a binary. This technology allows the automation of binary analysis and threat detection in the blink of an eye. During my internship in front-end team, I worked on this solution. We have to create entirely a web interface for our users.",
+            "explanation": "GLIMPS Malware is a solution for automatic malware detection and in-depth analysis. It can be integrated into flows (Email proxy or Web Proxy) and the solution is compatible with various EDR, NDR, SIEM, SOAR.",
+            "link": "https://www.glimps.fr/en/glimps-malware-2/",
+            "link_icon": "link",
+            "skills": [
+                {
+                    "icon": "pen",
+                    "name": "Front-End"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular"
+                },
+                {
+                    "icon": "typescript",
+                    "name": "Typescript"
+                },
+                {
+                    "icon": "docker",
+                    "name": "Docker"
+                }
+            ],
+            "images": [
+                "malware_01.png",
+                "malware_02.png",
+                "malware_03.png"
+            ]
+        },
+        {
+            "id": "odelim",
+            "title": "Odelim",
+            "short_description": "ODELIM is a delivery management and organization solution for professionals in the fuel sector.",
+            "long_description": "ODELIM is a delivery management and organization solution for professionals in the fuel sector. This web and mobile solution aims to facilitate the organization and management of deliveries and rounds for managers, but also to improve working conditions by digitizing all administrative and redundant procedures.",
+            "explanation": "Through this project, I was able to develop all the back-end part of the solution, set up the database, help with web and mobile development…",
+            "link": null,
+            "link_icon": "link",
+            "skills": [
+                {
+                    "icon": "pen",
+                    "name": "Front-End"
+                },
+                {
+                    "icon": "angular",
+                    "name": "Angular"
+                },
+                {
+                    "icon": "typescript",
+                    "name": "Typescript"
+                },
+                {
+                    "icon": "sql",
+                    "name": "SQL"
+                },
+                {
+                    "icon": "flutter",
+                    "name": "Flutter"
+                }
+            ],
+            "images": [
+                "odelim_01.png",
+                "odelim_02.png",
+                "odelim_03.png"
+            ]
+        }
+    ]
+}
