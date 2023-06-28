@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { TermsComponent } from './terms/terms.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: "contact", component: ContactComponent
+  },
+  {
+    path: "terms", component: TermsComponent
   },
   {
     path: "**", component: NotFoundComponent

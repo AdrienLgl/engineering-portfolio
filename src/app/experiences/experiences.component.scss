@@ -20,7 +20,7 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     margin-top: 2em;
     flex-wrap: wrap;
 }
@@ -183,10 +183,17 @@ p {
                 height: 60px;
             }
 
+            transition: all ease-in-out .2s;
+
         }
 
         .company:last-of-type {
             margin-bottom: 0;
+        }
+
+        .company:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
     }
 }

@@ -20,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ProjectsComponent,
     NotFoundComponent,
     ProjectDetailsComponent,
-    ContactComponent
+    ContactComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,

@@ -88,3 +88,11 @@
 .button:hover {
     color: rgb(255, 255, 255, 0.8);
 }
+
+@media (max-width: 700px) {
+    h1 {
+        margin-bottom: 1em !important;
+        line-height: 1em !important;
+    }
+
+}
